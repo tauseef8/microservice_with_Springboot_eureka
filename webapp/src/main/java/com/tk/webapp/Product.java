@@ -15,6 +15,7 @@ public class Product implements Serializable {
 	private Double price;
 	private String seller;
 	private String name;
+	private String imgAdd;
 
 	public Double getPrice() {
 		return price;
@@ -39,9 +40,18 @@ public class Product implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+
+	public String getImgAdd() {
+		return imgAdd;
+	}
+
+	public void setImgAdd(String imgAdd) {
+		this.imgAdd = imgAdd;
+	}
 
 	@Override
 	public String toString() {
-		return "Product [price=" + price + ", seller=" + seller + ", name=" + name + "]";
+		return "Product [price=" + price + ", seller=" + seller + ", name=" + name + ", imgAdd=" + imgAdd + "]";
 	}
 }

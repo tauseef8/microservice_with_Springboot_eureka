@@ -20,6 +20,7 @@ public class DealOfDay implements Serializable{
 	private String name;
 	private String minSku;
 	private Double totalPrice;
+	private String imgAdd;
 	
 	
 	public Double getPrice() {
@@ -54,9 +55,15 @@ public class DealOfDay implements Serializable{
 	}
 	
 	
+	public String getImgAdd() {
+		return imgAdd;
+	}
+	public void setImgAdd(String imgAdd) {
+		this.imgAdd = imgAdd;
+	}
 	@Override
 	public String toString() {
-		return "DealOfDay [price=" + price + ", discount=" + discount + ", name=" + name + ", minSku=" + minSku + ", totalPrice=" + totalPrice + "]";
+		return "DealOfDay [price=" + price + ", discount=" + discount + ", name=" + name + ", minSku=" + minSku + ", totalPrice=" + totalPrice + ", imgAdd=" + imgAdd + "]";
 	}
 	
 }

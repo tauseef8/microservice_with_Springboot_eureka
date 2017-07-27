@@ -42,40 +42,11 @@
 					
 					<div class="content" style="min-height: 350px">
 					
-					 <c:forEach items="${dealOfDays}" var="dealOfDay">
 					
-					<div class="product-wrapper">
-						<div class="img-wrapper">
-							<img src="resources/images/${dealOfDay.imgAdd}" height="180px" width="180px"/>
+						<div class="img-wrapper" style="margin-left:200px">
+							<img src="resources/images/maintenance.jpg" height="300px" width="500px"/>
 						</div>
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-sm-3">Name:</div>
-										<div class="col-sm-9">${dealOfDay.name}</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-3">Price:</div>
-										<div class="col-sm-9">${dealOfDay.price}</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-3">Sale:</div>
-										<div class="col-sm-9">${dealOfDay.discount}</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-3">SKU:</div>
-										<div class="col-sm-9">${dealOfDay.minSku}</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-3">Value:</div>
-										<div class="col-sm-9">${dealOfDay.totalPrice}</div>
-									</div>
-
-								</div>
-
-								<div class="btn">Place Order</div>
-					</div>
-					
-			</c:forEach> 
+								
 			</div>		
 					<div class="footer">
 

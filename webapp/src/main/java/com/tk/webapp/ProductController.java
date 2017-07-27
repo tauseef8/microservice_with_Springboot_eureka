@@ -20,7 +20,8 @@ public class ProductController {
 	ProductRepository productRepository;
 	
 	@RequestMapping("/")
-	public String home(){
+	public String home(Model model){
+		model.addAttribute("products", productRepository.getAllProducts());
 		return "index";
 	}
 	@RequestMapping("/productList")
